@@ -22,7 +22,7 @@ body {
   flex-direction: column;
 }
 .hero-image {
-  width:800px;
+  width: 800px;
   align-self: center;
 }
 .hero-heading {
@@ -33,9 +33,24 @@ body {
   margin-top: 0;
   font-size: 1.6rem;
 }
-
-@media (max-width:425px){
-    .hero-image{
-        width: 350px;
-    }
+.card {
+  width: 175px;
+  font-size: 1rem;
+}
+.card-image {
+  width: 100%;
+}
+.card-stats{
+    margin-right:15px;
+}
+.card-star {
+  width: 14px;
+}
+.gray {
+  color: #918e9b;
+}
+@media (max-width: 425px) {
+  .hero-image {
+    width: 350px;
+  }
 }
