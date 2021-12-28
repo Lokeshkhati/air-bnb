@@ -1,6 +1,5 @@
 import React from "react";
-import Contact from "./components/Contact";
-import img from "./images/card-image.png";
+import Jokes from "./components/Jokes";
 // import Navbar from "./components/Navbar"
 // import Hero from "./components/Hero";
 // import Card from "./components/Card";
@@ -8,36 +7,27 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="contacts">
+    <div className="container">
       {/* <Navbar/>
      <Hero/>
      <Card/>  */}
-      <div className="contacts">
-        <Contact
-          img={img}
-          name="Mr. Whiskerson"
-          phone="(212) 555-1234"
-          email="mr.whiskaz@catnap.meow"
-        />
-        <Contact
-          img={img}
-          name="Fluffykins"
-          phone="(212) 555-2345"
-          email="fluff@me.com"
-        />
-        <Contact
-          img={img}
-          name="Felix"
-          phone="(212) 555-4567"
-          email="thecat@hotmail.com"
-        />
-        <Contact
-          img={img}
-          name="Pumpkin"
-          phone="(0800) CAT KING"
-          email="pumpkin@scrimba.com"
-        />
-      </div>
+      <Jokes 
+     setup= "I got my daughter a fridge for her birthday."
+     punchline= "I can't wait to see her face light up when she opens it."
+     />
+     <Jokes 
+     setup="How did the hacker escape the police?"
+     punchline="He just ransomware!
+"     />
+     <Jokes 
+     setup= "Why don't pirates travel on mountain roads?"
+     punchline= "Scurvy."
+     />
+     <Jokes 
+     setup= " What's the best thing about Switzerland?"
+     punchline= "I don't know, but the flag is a big plus!"
+     />
+        
     </div>
   );
 }
