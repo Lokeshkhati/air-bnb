@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Jokes(props) {
+export default function Jokes({setup,punchline}) {
   return (
     <div className="joke-container">
-      <h2>Setup : {props.setup} </h2>
-      <h3>Punchline : {props.punchline} </h3>
+    { setup && <h2>Setup : {setup} </h2>}
+      <h3>Punchline : {punchline} </h3>
     </div>
   )
 }
