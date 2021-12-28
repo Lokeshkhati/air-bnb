@@ -1,32 +1,36 @@
 import React from "react";
-import Jokes from "./components/Jokes";
-// import Navbar from "./components/Navbar"
-// import Hero from "./components/Hero";
-// import Card from "./components/Card";
+import Navbar from "./components/Navbar"
+import Hero from "./components/Hero";
+import Card from "./components/Card";
+import card from "./images/card-image.png";
 import "./index.css";
 
 function App() {
   return (
     <div className="container">
-      {/* <Navbar/>
+      <Navbar/>
      <Hero/>
-     <Card/>  */}
-      <Jokes 
-    //  setup= "I got my daughter a fridge for her birthday."
-     punchline= "I can't wait to see her face light up when she opens it."
-     />
-     <Jokes 
-     setup="How did the hacker escape the police?"
-     punchline="He just ransomware!
-"     />
-     <Jokes 
-     setup= "Why don't pirates travel on mountain roads?"
-     punchline= "Scurvy."
-     />
-     <Jokes 
-     setup= " What's the best thing about Switzerland?"
-     punchline= "I don't know, but the flag is a big plus!"
-     />
+     <div className="cards">
+     <Card
+     img={card}
+     rating ="5.0"
+     reviewCount = {6}
+     country = "USA"
+     title =" Life lessons with Katie Zaferes"
+     price = {136}
+
+     /> 
+     <Card
+     img={card}
+     /> 
+     <Card
+     img={card}
+     /> 
+     <Card
+     img={card}
+     /> 
+     </div>
+  
         
     </div>
   );

@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: poppins;
-}/* 
+}
 .nav {
   height: 75px;
   display: flex;
@@ -53,15 +53,12 @@ body {
   .hero-image {
     width: 350px;
   }
-} */
-
-.joke-container{
-  margin: 50px;
-  padding-top: 10px;
-  padding-left: 20px;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
-  width: 500px;
-  height: 200px;
-  border-radius: 10px;
 }
 
+
+.cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 150px;
+}
