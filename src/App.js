@@ -1,14 +1,25 @@
 import React from "react";
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero";
-import Card from "./components/Card";
-import card from "./images/card-image.png";
+// import Navbar from "./components/Navbar"
+// import Hero from "./components/Hero";
+// import Card from "./components/Card";
+// import card from "./images/card-image.png";
+import Jokes from "./components/Jokes";
+import JokesData from "./components/JokesData";
 import "./index.css";
 
 function App() {
+
+  const jokeElement = JokesData.map(joke=>{
+    return <Jokes
+    setup = {joke.setup}
+    punchline={joke.punchline}
+    />
+  })
   return (
     <div className="container">
-      <Navbar/>
+      
+  
+        {/* <Navbar/>
      <Hero/>
      <div className="cards">
      <Card
@@ -26,12 +37,8 @@ function App() {
      <Card
      img={card}
      /> 
-     <Card
-     img={card}
-     /> 
-     </div>
-  
-        
+     </div> */}
+     {jokeElement}
     </div>
   );
 }
