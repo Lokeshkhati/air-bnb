@@ -12,6 +12,9 @@ body {
   padding: 20px 35px;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
+section{
+  padding: 10px;
+}
 .nav-logo img {
   max-width: 100px;
 }
@@ -36,15 +39,39 @@ body {
 .card {
   width: 175px;
   font-size: 1rem;
+  /* flex: 0 0 auto; */
+  margin-right: 55px;
+  display: flex;          
+  flex-direction: column; 
+  position: relative;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  justify-content: space-evenly;
+
 }
 .card-image {
-  width: 100%;
+  width: 250px;
+  border-radius: 10px;
+  height: 380px;
 }
 .card-stats{
     margin-right:15px;
 }
 .card-star {
   width: 14px;
+}
+.card-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px; 
+  font-weight: bold;
 }
 .gray {
   color: #918e9b;
@@ -53,15 +80,5 @@ body {
   .hero-image {
     width: 350px;
   }
-}
-
-.card-image{
-  width: 200px;
-  height: 300x;
-}
-.cards-list {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 20px;
-  overflow-x: auto;
+  
 }
