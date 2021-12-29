@@ -55,10 +55,13 @@ body {
   }
 }
 
-
-.cards{
+.card-image{
+  width: 200px;
+  height: 300x;
+}
+.cards-list {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 150px;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
